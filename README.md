@@ -9,7 +9,9 @@
 2. 在图形界面选择自己的 Whisper-GPT 文件夹和 FFmpeg。
 3. 按需测试 API，并保存配置。
 4. 双击 `启动双语字幕工具.vbs` 开始使用。
+5. 
 <img width="2544" height="1257" alt="image" src="https://github.com/user-attachments/assets/ea7d214b-3105-4b07-9d79-feac57ce1c68" />
+
 
 发布包不包含模型、视频、字幕、日志、缓存、API Key 或任何用户配置。
 
@@ -71,14 +73,18 @@
 # 1.potplayer自带字幕翻译功能和寻找字幕功能，为什么还要这个？
 potplayer确实有相关功能，但网络字幕不一定可以找到，而且有些视频根本没有字幕，这个小工具的定位是本地视频，有些字幕翻译还要依靠网络实时翻译，暂停快进都会影响体验，且有些用户用的不是potplayer播放器。
 所以本工具针对的是有本地化需求、追求更好实际体验的通用用户
+
 <img width="1277" height="1112" alt="image" src="https://github.com/user-attachments/assets/a9b38a57-41b8-4d67-a8ff-5fdeabe5d824" />
 
 # 2.已有成熟项目：WEIFENG2333/VideoCaptioner，有啥区别？
+
 <img width="867" height="732" alt="image" src="https://github.com/user-attachments/assets/695924e5-6c18-45e8-99ce-2e10a2690555" />
+
 该项目确实完成度更高，功能更全面，如果需要通用字幕生产能力（UP主），它是很好的选择
 在我的工具制作初期没有看到这个项目，不过确实还是有些定位差异的：
 本工具相对更简单，轻量化，基本纯python代码实现，针对特定分类的视频进行了一定程度的参数特调，后期用户可以按照自己的需要让Agent根据需求轻松修改，是个人轻量化可快速适配调整的项目，有更高的二次开发可玩性。
 并且对不同需求视频提供了速度、准确性、批量化、API接口的多种选择
+
 <img width="587" height="132" alt="image" src="https://github.com/user-attachments/assets/181eebec-0e9b-4c98-82f1-c56697f6e9fa" />
 <img width="1290" height="474" alt="image" src="https://github.com/user-attachments/assets/d5f101b8-515d-415e-ad29-f99ffcf988f9" />
 <img width="1125" height="192" alt="image" src="https://github.com/user-attachments/assets/1134a75e-ab90-44f3-a2c3-e5653413a68d" />
@@ -90,16 +96,22 @@ potplayer确实有相关功能，但网络字幕不一定可以找到，而且�
 # 4.翻译效果和隐私怎么取舍，速度如何？
 翻译功能依托API，用户自己接入的模型，采用的是openai的通用接口，轻松适配
 且针对内容过长、AI回答质量差等问题采取二分法，自动切片处理，优先默认长片段，保证上下文对话翻译精准，符合语境。用户也可以设置等待时间和并发数，有较高的适配性和稳定性。
+
 <img width="678" height="648" alt="image" src="https://github.com/user-attachments/assets/df506b06-f184-4c33-b97a-e8c11f2757bf" />
+
 部分多次未能成功的字幕有特定优化规则，以极小的代价换取速度优势，且每次翻译会继承上次成功字幕数，减少token浪费，翻译中断后可复用缓存，只补译缺失部分。
+
 <img width="1575" height="609" alt="image" src="https://github.com/user-attachments/assets/3706dc4b-05a4-43a1-b195-591a14079d8a" />
+
 
 # 5.是不是新瓶装旧酒，没啥新的价值？
 
 该项目确实是“旧酒”，但是基于的是本人的另一个较为完整的知识管理系统（有知识生命周期、关系网络、长期演化能力）
 现已暂停项目开发，本次是将其中“数据管理层”模块抽离出来，形成一个单独的工具，未来也将作为一个模块接入该系统预留的抽象层接口
 我在之前的系统设计/开发过程中，形成了一套针对本地媒体数据的处理思路，现在把“数据管理层”模块独立出来做成一个轻量工具，未来会再通过抽象接口接回知识系统中。
+
 <img width="924" height="687" alt="image" src="https://github.com/user-attachments/assets/23346fda-5fe3-49db-bb54-a145cbd35762" />
+
 
 
 ## Community Links
