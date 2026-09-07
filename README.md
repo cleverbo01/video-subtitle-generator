@@ -8,6 +8,7 @@
 2. 在图形界面选择自己的 Whisper-GPT 文件夹和 FFmpeg。
 3. 按需测试 API，并保存配置。
 4. 双击 `启动双语字幕工具.vbs` 开始使用。
+<img width="2544" height="1257" alt="image" src="https://github.com/user-attachments/assets/ea7d214b-3105-4b07-9d79-feac57ce1c68" />
 
 发布包不包含模型、视频、字幕、日志、缓存、API Key 或任何用户配置。
 
@@ -26,3 +27,13 @@
 - API Key 默认不保存；只有用户明确勾选后才保存到本机。
 - 视频整理功能复制原始媒体，不移动输入目录文件。
 - 配置保存在程序旁的 `project_config.json`，该文件不应提交到 GitHub。
+
+## Community Links
+
+  [Linux.Do](https://linux.do) — A community for sharing and discussing technology.
+
+## License
+
+  This project is licensed under the GNU General Public License v3.0.
+
+  See [LICENSE](LICENSE) for details.
