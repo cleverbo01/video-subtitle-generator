@@ -1,0 +1,25 @@
+# Local environment and credentials
+project_config.json
+settings.json
+*.key
+*.token
+
+# Generated media, subtitles, logs and translation cache
+输出/
+output/
+logs/
+.translation_cache/
+*_原声版.srt
+*_中外版.srt
+*_中文版.srt
+*_转录文本.txt
+*_质量不合格.srt
+*_时间轴已修复.srt
+startup_error.log
+
+# Python / Windows artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+Thumbs.db
+Desktop.ini
